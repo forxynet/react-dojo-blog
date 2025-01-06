@@ -5,16 +5,17 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"  
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
-      "react-app"     
+      "react-app"
     ]
   },
   "browserslist": {
@@ -30,6 +31,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "ajv": "^7.2.4"
   }
 }

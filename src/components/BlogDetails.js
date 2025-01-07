@@ -3,11 +3,11 @@ import useFetch from "./useFetch";
 
 export default function BlogDetails() {
   const { id } = useParams();
-  const { data: blog, isPending, error } = useFetch(`http://localhost:8000/blogs/${id}`);
+  const { data: blog, isPending, error } = useFetch(`https://node-server-json-db.onrender.com/blogs/${id}`);
   const history = useHistory();
 
   function handleDelteBlog() {
-    fetch(`http://localhost:8000/blogs/${id}`, {
+    fetch(`https://node-server-json-db.onrender.com/blogs/${id}`, {
       method: 'DELETE'
     }).then(() => {
       history.push('/');
